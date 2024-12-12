@@ -21,9 +21,22 @@ export default function Hero() {
               <Button size="lg" className="text-lg">
                 Start Free Trial
               </Button>
-              <Button size="lg" variant="outline" className="text-lg">
-                Book Demo
-              </Button>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button size="lg" variant="outline" className="text-lg">
+                    Book Demo
+                  </Button>
+                </DialogTrigger>
+                <DialogContent className="sm:max-w-[425px]">
+                  <DialogHeader>
+                    <DialogTitle>Book a Demo</DialogTitle>
+                    <DialogDescription>
+                      Schedule a personalized demo to see how Stance can help your dojo.
+                    </DialogDescription>
+                  </DialogHeader>
+                  <DemoForm />
+                </DialogContent>
+              </Dialog>
             </div>
           </motion.div>
           <motion.div
