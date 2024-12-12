@@ -1,5 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import DemoForm from "../forms/DemoForm";
 
 export default function Hero() {
   return (
