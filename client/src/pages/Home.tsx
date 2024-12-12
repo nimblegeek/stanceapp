@@ -3,6 +3,8 @@ import Features from "@/components/sections/Features";
 import Pricing from "@/components/sections/Pricing";
 import Contact from "@/components/sections/Contact";
 import Header from "@/components/Header";
+import FAQ from "@/components/sections/FAQ";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
