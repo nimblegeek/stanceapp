@@ -12,10 +12,10 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-              Simplify Your Martial Arts School Management
+              Unlock The Power Of Your JiuJitsu Club
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8">
-              All-in-one platform for member management, payments, and communications. Focus on teaching while we handle the rest.
+              All-in-one platform for member management, payments, and communications. Focus on teaching while we handle the rest. Made by practioners, for practitioners.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="text-lg">
