@@ -5,42 +5,42 @@ import { Check } from "lucide-react";
 const plans = [
   {
     name: "Starter",
-    price: "$49",
-    description: "Perfect for small dojos",
+    price: "$499",
+    description: "Best for newly started clubs",
     features: [
       "Up to 50 members",
       "Basic member management",
       "Payment processing",
       "Email notifications",
-      "Mobile app access"
-    ]
+      "Mobile app access",
+    ],
   },
   {
-    name: "Professional",
-    price: "$99",
-    description: "For growing martial arts schools",
+    name: "Pro",
+    price: "$1,999",
+    description: "For established clubs who seek more automated workflows",
     features: [
       "Up to 200 members",
       "Advanced member management",
       "Multiple payment methods",
       "Email marketing campaigns",
       "Belt progression tracking",
-      "Advanced analytics"
-    ]
+      "Advanced analytics",
+    ],
   },
   {
-    name: "Enterprise",
+    name: "Growth",
     price: "Custom",
-    description: "For large organizations",
+    description: "For established clubs that want to scale the business",
     features: [
       "Unlimited members",
       "Multi-location support",
       "Custom branding",
       "Priority support",
       "API access",
-      "Custom integrations"
-    ]
-  }
+      "Custom integrations",
+    ],
+  },
 ];
 
 export default function Pricing() {
@@ -52,7 +52,8 @@ export default function Pricing() {
             Simple, Transparent Pricing
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Choose the plan that best fits your dojo's needs
+            Choose the plan that best fits your clubs needs and evolutionary
+            state
           </p>
         </div>
 
@@ -60,10 +61,14 @@ export default function Pricing() {
           {plans.map((plan) => (
             <Card key={plan.name} className="relative">
               <CardHeader>
-                <CardTitle className="text-2xl font-bold">{plan.name}</CardTitle>
+                <CardTitle className="text-2xl font-bold">
+                  {plan.name}
+                </CardTitle>
                 <div className="mt-4">
                   <span className="text-4xl font-bold">{plan.price}</span>
-                  {plan.price !== "Custom" && <span className="text-muted-foreground">/month</span>}
+                  {plan.price !== "Custom" && (
+                    <span className="text-muted-foreground">/month</span>
+                  )}
                 </div>
                 <p className="text-muted-foreground mt-2">{plan.description}</p>
               </CardHeader>
