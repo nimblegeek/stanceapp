@@ -33,14 +33,14 @@ export default function Hero() {
               <Dialog>
                 <DialogTrigger asChild>
                   <Button size="lg" variant="outline" className="text-lg">
-                    Book Demo
+                    Request Demo
                   </Button>
                 </DialogTrigger>
                 <DialogContent className="sm:max-w-[425px]">
                   <DialogHeader>
-                    <DialogTitle>Book a Demo</DialogTitle>
+                    <DialogTitle>Request a Demo</DialogTitle>
                     <DialogDescription>
-                      Schedule a personalized demo to see how Stance can help your dojo.
+                      Fill out the form below and we'll contact you to schedule a personalized demo.
                     </DialogDescription>
                   </DialogHeader>
                   <DemoForm />
