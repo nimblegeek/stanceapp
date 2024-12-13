@@ -15,7 +15,7 @@ const features = [
   },
   {
     title: "Email Marketing",
-    description: "Stay connected with your members through automated communications",
+    description: "Stay connected with your members through automated communication",
     icon: Mail,
   },
   {

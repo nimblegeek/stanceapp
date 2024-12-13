@@ -7,38 +7,49 @@ const plans = [
     name: "Starter",
     price: "$499",
     description: "Best for newly started clubs",
+    type: "subscription",
     features: [
+      "Stance boilerplate",
       "Up to 50 members",
       "Basic member management",
       "Payment processing",
-      "Email notifications",
-      "Mobile app access",
+      "Email solution",
+      "Support for setup and launch",
+      "One feature request at a time",
+      "Average 48 hour delivery",
     ],
   },
   {
     name: "Pro",
-    price: "$1,999",
-    description: "For established clubs who seek more automated workflows",
+    price: "$899",
+    description: "For established clubs who want to grow and scale",
+    type: "subscription",
     features: [
+      "Stance boilerplate",
+      "Customer development",      
       "Up to 200 members",
       "Advanced member management",
-      "Multiple payment methods",
-      "Email marketing campaigns",
-      "Belt progression tracking",
-      "Advanced analytics",
+      "Payment solution through Stripe",
+      "Email marketing and support",
+      "Unlimited support",
+      "Two feature requests at a time", 
+      "48 hours response time",
     ],
   },
   {
-    name: "Growth",
-    price: "Custom",
-    description: "For established clubs that want to scale the business",
+    name: "Stance Boilerplate",
+    price: "$699",
+    description: "For club owners who want to run it their own",
+    type: "Once",
     features: [
-      "Unlimited members",
-      "Multi-location support",
-      "Custom branding",
-      "Priority support",
-      "API access",
-      "Custom integrations",
+      "Full-stack application setup",
+      "Landing page & dashboard templates",
+      "Database schema & migrations",
+      "User authentication & admin panel",
+      "Payment integration setup",
+      "Email system configuration",
+      "Deployment resources & documentation",
+      "14 days technical support",
     ],
   },
 ];
@@ -49,11 +60,10 @@ export default function Pricing() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Simple, Transparent Pricing
+            Flexible Solutions for Every Need
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Choose the plan that best fits your clubs needs and evolutionary
-            state
+            Choose between our managed solutions or take control with our boilerplate
           </p>
         </div>
 
@@ -66,8 +76,10 @@ export default function Pricing() {
                 </CardTitle>
                 <div className="mt-4">
                   <span className="text-4xl font-bold">{plan.price}</span>
-                  {plan.price !== "Custom" && (
+                  {plan.type === "subscription" ? (
                     <span className="text-muted-foreground">/month</span>
+                  ) : (
+                    <span className="text-muted-foreground"> one-time</span>
                   )}
                 </div>
                 <p className="text-muted-foreground mt-2">{plan.description}</p>
@@ -82,7 +94,7 @@ export default function Pricing() {
                   ))}
                 </ul>
                 <Button className="w-full mt-8">
-                  {plan.price === "Custom" ? "Contact Sales" : "Get Started"}
+                  {plan.type === "subscription" ? "Get Started" : "Purchase Now"}
                 </Button>
               </CardContent>
             </Card>
