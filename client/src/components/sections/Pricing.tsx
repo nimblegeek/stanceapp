@@ -26,13 +26,13 @@ const plans = [
     type: "subscription",
     features: [
       "Stance boilerplate",
-      "Customer development",      
+      "Customer development",
       "Up to 200 members",
       "Advanced member management",
       "Payment solution through Stripe",
       "Email marketing and support",
       "Unlimited support",
-      "Two feature requests at a time", 
+      "Two feature requests at a time",
       "48 hours response time",
     ],
   },
@@ -60,10 +60,11 @@ export default function Pricing() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Flexible Solutions for Every Need
+            Transparent and simple pricing
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Choose between our managed solutions or take control with our boilerplate
+            Choose between subscribing to a technical partnership or running
+            Stance yourself. Cancel anytime.
           </p>
         </div>
 
@@ -94,7 +95,9 @@ export default function Pricing() {
                   ))}
                 </ul>
                 <Button className="w-full mt-8">
-                  {plan.type === "subscription" ? "Get Started" : "Purchase Now"}
+                  {plan.type === "subscription"
+                    ? "Get Started"
+                    : "Purchase Now"}
                 </Button>
               </CardContent>
             </Card>
