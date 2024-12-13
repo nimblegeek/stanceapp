@@ -6,10 +6,17 @@ import ContactModal from "./ContactModal";
 export default function Header() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      const headerOffset = 80; // Account for fixed header
+      const headerOffset = 80;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
@@ -25,7 +32,7 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <button 
-            onClick={() => scrollToSection("hero")}
+            onClick={scrollToTop}
             className="text-xl font-bold hover:text-primary transition-colors cursor-pointer border-none bg-transparent"
           >
             Stance
