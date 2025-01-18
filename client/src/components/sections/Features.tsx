@@ -1,11 +1,24 @@
-import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+} from "@/components/ui/card";
 import { motion } from "framer-motion";
-import { Users, CreditCard, Mail, Calendar, Award, BarChart } from "lucide-react";
+import {
+  Users,
+  CreditCard,
+  Mail,
+  Calendar,
+  Award,
+  BarChart,
+} from "lucide-react";
 
 const features = [
   {
     title: "Member Management",
-    description: "Track attendance, belt ranks, and student progress effortlessly",
+    description:
+      "Track attendance, belt ranks, and student progress effortlessly",
     icon: Users,
   },
   {
@@ -15,7 +28,8 @@ const features = [
   },
   {
     title: "Email Marketing",
-    description: "Stay connected with your members through automated communication",
+    description:
+      "Stay connected with your members through automated communication",
     icon: Mail,
   },
   {
@@ -41,13 +55,14 @@ export default function Features() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Everything You Need to Run Your Dojo
+            Everything You Need to Run Your Academy
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Streamline your operations with our comprehensive suite of tools designed specifically for martial arts schools.
+            Streamline your operations with our comprehensive suite of tools
+            designed specifically for martial arts schools.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <motion.div

@@ -26,7 +26,7 @@ const plans = [
     type: "subscription",
     features: [
       "Stance boilerplate",
-      "Customer development",
+      "Custom development",
       "Up to 200 members",
       "Advanced member management",
       "Payment solution through Stripe",

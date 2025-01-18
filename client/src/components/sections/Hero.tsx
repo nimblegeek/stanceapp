@@ -21,10 +21,12 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-              Unlock The Power Of Your JiuJitsu Club
+              Unlock The Power Of Your Martial Arts Academy
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8">
-              All-in-one platform for member management, payments, and communications. Focus on teaching while we handle the rest. Made by practioners, for practitioners.
+              All-in-one platform for member management, payments, and
+              communication. Focus on teaching and let the platform handle the
+              administration. <b>Made by practioners, for practitioners.</b>
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="text-lg">
@@ -40,7 +42,8 @@ export default function Hero() {
                   <DialogHeader>
                     <DialogTitle>Request a Demo</DialogTitle>
                     <DialogDescription>
-                      Fill out the form below and we'll contact you to schedule a personalized demo.
+                      Fill out the form below and we'll contact you to schedule
+                      a personalized demo.
                     </DialogDescription>
                   </DialogHeader>
                   <DemoForm />
